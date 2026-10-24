@@ -1,0 +1,13 @@
+{
+  "sections_changed": [
+    "Cláusula 3 - Precio",
+    "Cláusula 4 - Disponibilidad del Servicio",
+    "Cláusula 5 - Soporte"
+  ],
+  "topics_touched": [
+    "precio",
+    "disponibilidad del servicio",
+    "soporte técnico"
+  ],
+  "summary_of_the_change": "El precio mensual pasa de USD 1.200 a USD 1.250. La disponibilidad del servicio garantizada aumenta del 99,5% al 99,9%. Se añade un sistema de tickets en línea como nuevo medio de soporte, además del correo electrónico."
+}

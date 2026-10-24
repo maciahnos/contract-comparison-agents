@@ -1,0 +1,8 @@
+langchain==1.4.4
+langchain-core==1.6.10
+langchain-openai==1.7.1
+langfuse==4.17.0
+openai==3.29.0
+pydantic==2.14.1
+python-dotenv==1.2.4
+pytest==8.4.2

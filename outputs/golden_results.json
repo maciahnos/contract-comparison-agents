@@ -1,0 +1,91 @@
+[
+  {
+    "id": "caso_1_licencia_software",
+    "parse_ok": true,
+    "completeness": 1.0,
+    "changes": {
+      "Plazo 12 -> 24 meses": true,
+      "Pago USD 12.000 -> 15.000": true,
+      "Soporte email -> email + chat": true,
+      "Terminación 30 -> 60 días": true,
+      "Nueva cláusula Protección de Datos": true
+    },
+    "latency_s": 18.0,
+    "trace_url": "https://cloud.langfuse.com/project/cmv5e4dm9033cad0dcnixtqxh/traces/1ff1519f616253508f7e46ae9e165c75",
+    "output": {
+      "sections_changed": [
+        "Cláusula 1 - Otorgamiento de Licencia",
+        "Cláusula 2 - Plazo",
+        "Cláusula 3 - Pago",
+        "Cláusula 4 - Soporte",
+        "Cláusula 5 - Terminación",
+        "Cláusula 7 - Protección de Datos (nueva)"
+      ],
+      "topics_touched": [
+        "licencia",
+        "plazo",
+        "pago",
+        "soporte técnico",
+        "terminación",
+        "protección de datos"
+      ],
+      "summary_of_the_change": "La cláusula de otorgamiento de licencia elimina la palabra 'intransferible' y cambia 'fines internos de la empresa' por 'operaciones internas de negocio'. El plazo del contrato se extiende de 12 a 24 meses. La tarifa anual de licencia aumenta de USD 12.000 a USD 15.000. Se añade el soporte técnico vía chat además de correo electrónico. El período de notificación para la terminación del contrato se extiende de 30 a 60 días. Se introduce una nueva cláusula de protección de datos, comprometiendo al Licenciante a cumplir con las normativas aplicables."
+    }
+  },
+  {
+    "id": "caso_2_consultoria",
+    "parse_ok": true,
+    "completeness": 1.0,
+    "changes": {
+      "Alcance + análisis regulatorio": true,
+      "Duración 6 -> 9 meses": true,
+      "Honorarios USD 8.000 -> 9.500": true,
+      "Entregables mensuales -> quincenales": true,
+      "Nueva cláusula Propiedad Intelectual": true
+    },
+    "latency_s": 10.3,
+    "trace_url": "https://cloud.langfuse.com/project/cmv5e4dm9033cad0dcnixtqxh/traces/11f630b9369c35aff956c679b6f2fd6f",
+    "output": {
+      "sections_changed": [
+        "Cláusula 1 - Alcance del Servicio",
+        "Cláusula 2 - Duración",
+        "Cláusula 3 - Honorarios",
+        "Cláusula 4 - Entregables",
+        "Cláusula 7 - Propiedad Intelectual (nueva)"
+      ],
+      "topics_touched": [
+        "alcance del servicio",
+        "duración",
+        "honorarios",
+        "entregables",
+        "propiedad intelectual"
+      ],
+      "summary_of_the_change": "El alcance del servicio se amplía para incluir análisis regulatorio. La duración del servicio se extiende de 6 a 9 meses. Los honorarios mensuales aumentan de USD 8.000 a USD 9.500. Los entregables cambian de reportes mensuales a reportes quincenales de avance. Se introduce una nueva cláusula de propiedad intelectual, estableciendo que todos los entregables serán propiedad del Cliente tras el pago final."
+    }
+  },
+  {
+    "id": "caso_3_saas",
+    "parse_ok": true,
+    "completeness": 1.0,
+    "changes": {
+      "Precio USD 1.200 -> 1.250": true,
+      "Disponibilidad 99,5% -> 99,9%": true,
+      "Soporte email -> email + tickets": true
+    },
+    "latency_s": 8.3,
+    "trace_url": "https://cloud.langfuse.com/project/cmv5e4dm9033cad0dcnixtqxh/traces/c222d9a3df7d09a93b55ce8278de5f4d",
+    "output": {
+      "sections_changed": [
+        "Cláusula 3 - Precio",
+        "Cláusula 4 - Disponibilidad del Servicio",
+        "Cláusula 5 - Soporte"
+      ],
+      "topics_touched": [
+        "precio",
+        "disponibilidad del servicio",
+        "soporte técnico"
+      ],
+      "summary_of_the_change": "El precio mensual pasa de USD 1.200 a USD 1.250. La disponibilidad del servicio garantizada pasa de 99,5% a 99,9%. El soporte al cliente se amplía de solo correo electrónico a incluir también un sistema de tickets en línea."
+    }
+  }
+]

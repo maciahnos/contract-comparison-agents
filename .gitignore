@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+outputs/run_console.txt
+outputs/golden_console.txt
+outputs/golden_err.txt

@@ -1,0 +1,45 @@
+{
+  "_nota": "Golden cases tomados del doc 'Diferencias entre Contratos y Enmiendas de ejemplo' del curso. Cada cambio esperado se considera detectado si TODAS sus palabras clave aparecen en la salida (sections_changed + topics_touched + summary). Los textos se normalizan: minúsculas, sin tildes y sin puntos/comas (asi '12.000' = '12000').",
+  "cases": [
+    {
+      "id": "caso_1_licencia_software",
+      "tipo": "complejo (4 modificaciones + 1 cláusula nueva)",
+      "original": "documento_1__original.jpg",
+      "amendment": "documento_1__enmienda.jpg",
+      "parse_must_contain": ["technova", "databridge", "12000", "30 dias"],
+      "expected_changes": [
+        {"label": "Plazo 12 -> 24 meses", "all_of": ["24 meses"]},
+        {"label": "Pago USD 12.000 -> 15.000", "all_of": ["15000"]},
+        {"label": "Soporte email -> email + chat", "all_of": ["chat"]},
+        {"label": "Terminación 30 -> 60 días", "all_of": ["60"]},
+        {"label": "Nueva cláusula Protección de Datos", "all_of": ["proteccion de datos"]}
+      ]
+    },
+    {
+      "id": "caso_2_consultoria",
+      "tipo": "complejo (4 modificaciones + 1 cláusula nueva)",
+      "original": "documento_2__original.jpg",
+      "amendment": "documento_2__enmienda.jpg",
+      "parse_must_contain": ["orion", "greenwave", "8000", "6 meses"],
+      "expected_changes": [
+        {"label": "Alcance + análisis regulatorio", "all_of": ["regulatorio"]},
+        {"label": "Duración 6 -> 9 meses", "all_of": ["9 meses"]},
+        {"label": "Honorarios USD 8.000 -> 9.500", "all_of": ["9500"]},
+        {"label": "Entregables mensuales -> quincenales", "all_of": ["quincenal"]},
+        {"label": "Nueva cláusula Propiedad Intelectual", "all_of": ["propiedad intelectual"]}
+      ]
+    },
+    {
+      "id": "caso_3_saas",
+      "tipo": "simple (3 modificaciones)",
+      "original": "documento_3__original.jpg",
+      "amendment": "documento_3__enmienda.jpg",
+      "parse_must_contain": ["cloudmetrics", "retailpulse", "1200", "995"],
+      "expected_changes": [
+        {"label": "Precio USD 1.200 -> 1.250", "all_of": ["1250"]},
+        {"label": "Disponibilidad 99,5% -> 99,9%", "all_of": ["999"]},
+        {"label": "Soporte email -> email + tickets", "all_of": ["ticket"]}
+      ]
+    }
+  ]
+}
